@@ -1,0 +1,92 @@
+ML 
+Different types of ML 
+Supervised learning
+    - Regression (target variable- continous data)
+        - Linear 
+            - Linear Regression
+            - Lasso 
+            - Ridge
+            - ElastisNet
+        - Decision Tree 
+            - Decision Tree Regression
+        - Support Vector Machine 
+            - Support Vector Regressor
+        - KNN 
+            - KNN Regressor
+        
+    - Classification
+        - Logistic 
+        - Decision Tree Classification
+        - KNN Classification
+        - Navie Bayes Classification types
+            - bernouli - Binary
+            - mulitnomial - Multiclass
+            - Gausian  ( For both binary and Multiclass problem)
+        - Binary (target variable - two choices)
+        - Multiclass (target variable - multiple choices) - discrete data
+Unsupervised learning
+    - 
+Reinforcement 
+    - AI agents
+
+Ensemble modeling
+    - Boosting  types (using Decision Tree multiple types)
+        - ADA Boosting model
+        - GRAP Boost model
+        - XG boost model
+        All boosting models have Classification and Regression 
+
+    - Bagging
+        - Random forest classifier
+        - Random forest Regression
+    - Voting (using combination of multiple models)
+    - Stacking (using combination of multiple models)
+
+
+Why deep learning? 
+    - increase in data, performance of Machine learning  also improves (not saturated)
+    - Activation function
+    - in Neural network  - intercept is called bias
+
+Explore https://mlu-explain.github.io/linear-regression/
+
+
+R2 score = 1 - sse / sst , if SSE > SST (Negative value - it's a dump model)  , SSE should be low 
+
+Three metrics in linear regression model
+    - MSE
+    - RMSE
+    - R2 score
+
+
+Regularization
+    - overfitting and underfitting
+        - overfitting - model is good on training data not good in testing data , metrics are good on training data, metrics are not good on testing data
+            - for overcoming overfitting Regularization
+                - Ridge regression - also know as L2 Reg model 
+                    - Mean square error  + Lambda * (sum of coffeicent)^2, 
+                                where,        
+                                    Lambda = learning rate (how much conversion will happen),
+                                    sum of coffeicent =   
+                                    to overcome overfitting
+                - Lasso Regression- also know as L1 reg model - for feature extrac
+                         - Mean square error  + Lambda * abs(coffeicent), 
+                         - to remove unncessary features
+                -   ElastisNet Regression
+                    - combination of both L1 and L2 
+
+                R2 = 0.8 (LR)
+                R2 = 0.79 (Ridge)
+                R2 =  0.78 (Lasso Ridge)
+                R2 = 0.79 (Elasic net - maximum pentalty)
+                approximate equal 
+                Elastic NEt first priority
+                Ridge regression 
+                Lasso regression 
+                Linear regression
+
+        - underfitting -  metrics are not good on both testing and training data
+
+        5% more industry standard r2 score between test and training data
+
+        - Best - genearlized model - by applying certain boundary 
