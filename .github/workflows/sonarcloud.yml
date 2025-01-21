@@ -43,7 +43,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: List files in the workspace (for debugging)
+        run: ls -R /github/workspace
+      
       - name: Analyze with SonarCloud
+
 
         # You can pin the exact commit or the version.
         # uses: SonarSource/sonarcloud-github-action@v2.2.0
