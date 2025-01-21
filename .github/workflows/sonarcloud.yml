@@ -46,8 +46,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: List files in the workspace (for debugging)
-        run: ls -R /github/workspace
+      
       
       - name: Analyze with SonarCloud
 
